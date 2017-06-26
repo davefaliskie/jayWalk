@@ -1,0 +1,5 @@
+// generate a new scaffold
+bin/rails generate scaffold Post title:string
+
+// migrate the database
+bin/rails db:migrate
