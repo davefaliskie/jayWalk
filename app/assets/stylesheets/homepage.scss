@@ -5,19 +5,9 @@
 
 // font-family: 'Limelight', cursive;
 
-html{
-  height: 100vh;
-  width: 100vw;
-  margin: none;
-  background-image: url(https://static.pexels.com/photos/335393/pexels-photo-335393.jpeg) ;
-			background-position: center center;
-			background-repeat:  no-repeat;
-			background-attachment: fixed;
-			background-size:  cover;
-			background-color: #999;
-}
 .homepage{
   color: #ffffff;
+  min-height: 100vh;
 }
 
 .homepage h1, .homepage h3 {
