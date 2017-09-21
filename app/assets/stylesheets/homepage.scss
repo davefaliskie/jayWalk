@@ -29,3 +29,16 @@
 .homepage a:hover{
   text-decoration: underline;
 }
+
+// ********** Style related to instafeed **********
+.instaimg img {
+  margin-bottom: 30px;
+  object-fit: cover;
+  height: 255px;
+  width: 255px;
+}
+.instaimg img:hover{
+  opacity: 0.8;
+  -moz-opacity: 0.8;
+  -webkit-opacity: 0.8;
+}
