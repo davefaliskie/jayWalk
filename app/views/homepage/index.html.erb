@@ -1,10 +1,51 @@
 <div class="homepage">
 
-  <h1>Jaywalk the World</h1>
+  <div class="container-fluid">
 
-  <div class="container">
-    <div id="instafeed" class="row"></div>
+    <!-- First Row, Intro, Video, Instagram -->
+    <div class="row justify-content-md-center">
+
+      <!-- 7 column Main part of the Home Page -->
+      <div class="col-lg-7">
+          <h1>Jaywalk the World</h1>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+          </p>
+
+          <div class="embed-responsive embed-responsive-16by9 landing-video" >
+            <iframe class="embed-responsive-item" width="720" height="405" src="https://www.youtube.com/embed/vkMMVkZMz7c?rel=0" frameborder="0" allowfullscreen></iframe>
+          </div>
+
+          <!-- More Videos  -->
+          <div class="more-videos row">
+            <div class="video-link col centered">Video</div>
+            <div class="video-link col centered">Video</div>
+            <div class="video-link col centered">Video</div>
+          </div>
+
+      </div>
+
+      <!-- 3 Column Instagram Feed -->
+      <div class="col-lg-3 ">
+        <h3 class="centered">Instagram Feed</h3>
+        <div id="instafeed" class="row no-gutters"></div>
+      </div>
+
+    </div>
+
+    <!-- Second Row -->
+    <div class="row justify-content-md-center">
+      <div class="col-lg-10">
+        <h2>Places We have JayWalked</h2>
+
+        <figure class="landing-map img-fluid" >
+          <%= render :file => "homepage/map" %>
+        </figure>
+      </div>
+
+    </div>
+
   </div>
-
 
 </div>

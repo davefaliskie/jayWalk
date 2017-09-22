@@ -8,11 +8,12 @@
 .homepage{
   color: #ffffff;
   min-height: 100vh;
+  padding-top: 3%;
 }
 
-.homepage h1, .homepage h3 {
-  margin-left: 5%;
-  font-family: 'Limelight', cursive;
+.homepage h1, .homepage h2, .homepage h3, .homepage h4, .homepage h5, .homepage h6,{
+  //margin-left: 5%;
+  font-family: 'Dosis', sans-serif;
 }
 
 // title
@@ -30,12 +31,36 @@
   text-decoration: underline;
 }
 
+// ********** related to video player **********
+.landing-video{
+  margin-top: 3.5%;
+}
+.more-videos{
+  margin: 5% 0;
+}
+.video-link{
+  height: 100px;
+  width: 100px;
+  background-color: #343512;
+  margin: 0 1%;
+}
+
+// ********** MAP **********
+.landing-map{
+}
+
+#mapdiv{
+  height: 80vh !important;
+  width: 80vw !important;
+}
+
+
 // ********** Style related to instafeed **********
 .instaimg img {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   object-fit: cover;
-  height: 255px;
-  width: 255px;
+  width: 100px;
+  height: 100px;
 }
 .instaimg img:hover{
   opacity: 0.8;
