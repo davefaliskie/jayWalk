@@ -10,10 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170626172057) do
+ActiveRecord::Schema.define(version: 20171207211431) do
 
   create_table "posts", force: :cascade do |t|
     t.string   "title"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "videos", force: :cascade do |t|
+    t.string   "title"
+    t.text     "iframe"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
