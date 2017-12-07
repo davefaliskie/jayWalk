@@ -1,29 +1,47 @@
-<p id="notice"><%= notice %></p>
+<div class="container-fluid about">
 
-<h1>Videos</h1>
+  <!-- First Row -->
+  <div class="row justify-content-md-center">
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Iframe</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+    <!-- 7 column Main part of the Page -->
+    <div class="col-lg-7">
+        <p id="notice"><%= notice %></p>
+        <h1>Videos</h1>
 
-  <tbody>
-    <% @videos.each do |video| %>
-      <tr>
-        <td><%= video.title %></td>
-        <td><%= video.iframe %></td>
-        <td><%= link_to 'Show', video %></td>
-        <td><%= link_to 'Edit', edit_video_path(video) %></td>
-        <td><%= link_to 'Destroy', video, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Iframe</th>
+              <th colspan="3"></th>
+            </tr>
+          </thead>
 
-<br>
+          <tbody>
+            <% @videos.each do |video| %>
+              <tr>
+                <td><%= video.title %></td>
+                <td><%= video.iframe %></td>
+                <td><%= link_to 'Show', video %></td>
+                <td><%= link_to 'Edit', edit_video_path(video) %></td>
+                <td><%= link_to 'Destroy', video, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+    </div>
 
-<%= link_to 'New Video', new_video_path %>
+    <!-- 3 Column Right -->
+    <div class="col-lg-3 ">
+      <%= link_to 'New Video', new_video_path, class: 'btn btn-primary' %>
+    </div>
+
+  </div>
+
+  <!-- Second Row -->
+  <div class="row justify-content-md-center">
+    <div class="col-lg-10">
+    </div>
+  </div>
+
+</div>
