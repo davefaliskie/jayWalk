@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 20171207211431) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "videos", force: :cascade do |t|
     t.string   "title"
     t.text     "iframe"

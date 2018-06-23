@@ -5,13 +5,8 @@ ruby '2.4.1'
 
 gem 'rails', '~> 5.0.0'
 
-# Use sqlite3 as in development & test, postgres in production
-group :development, :test do
-  gem 'sqlite3'
-end
-group :production do
-  gem 'pg'
-end
+# use postgres for all environments
+gem 'pg'
 
 # ------ Added Gems ------
 gem 'bootstrap', '~> 4.0.0.alpha6'
